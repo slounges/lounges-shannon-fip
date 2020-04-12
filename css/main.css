@@ -1,0 +1,634 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Remove this rule, this is only for demo purposes to make the boxes black with white text
+The line height on the <p> tag gives each box a height value*/
+
+body 
+{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	background-image: url("file:///Users/shannonlounges/Desktop/lounges_shannon_FIP/images/bg.JPEG");
+	background-repeat: no-repeat;
+}
+p
+{
+	color: #fff;
+	line-height: 100px;
+	background: #000;
+	text-align: center;
+	margin: 0;
+}
+
+i{
+	color: #84C6FF;
+}
+h1{
+	font-size: 30px
+}
+h5{
+	color:#FF9829;
+}
+
+h6{
+	text-align: left
+	margin:0;
+	padding: 0;
+	color: lightblue;
+
+}
+h3{
+	text-align: center;
+}
+
+
+
+/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+	
+}	
+
+img 
+{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+
+
+/* links to pages */
+#mainNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+#mainNav li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+#mainNav li:last-child {
+  border-right: none;
+}
+
+#mainNav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#mainNav li a:hover:not(.active) {
+  background-color: lightblue;
+}
+
+.active {
+  background-color: #FF9829;
+}
+
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #000;
+	height: 20px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	margin-top: 40px;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	
+}
+
+/*This is a flex item*/
+#logo
+{
+	width: 200px;
+}
+/*for footer logo*/
+#logotwo
+{
+	padding-top: 20px;
+}
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav 
+{
+	margin-left: auto;
+	width: 500px;
+}
+/*post 1*/
+#promo 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+#promo12
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+#promo123 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+/**/
+#promo2 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+#promo21 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+#promo22 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+/**/
+
+#promo3 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+/* */
+#promo p 
+{
+	line-height: 25px;
+	text-align: left;
+	background-color: white;
+	color: black;
+	margin-top: 50px;
+	font-size: 15px;
+
+}
+#promo12 p 
+{
+	line-height: 25px;
+	text-align: left;
+	background-color: white;
+	color: black;
+	margin-top: 50px;
+	font-size: 15px;
+
+}
+#promo123 p 
+{
+	line-height: 25px;
+	text-align: left;
+	background-color: white;
+	color: black;
+	margin-top: 50px;
+	font-size: 15px;
+
+}
+/*first post*/
+#promoText 
+{
+	width: 600px;
+	font-size: 15px
+}
+#promoText12
+{
+	width: 600px;
+	font-size: 15px
+}
+#promoText123
+{
+	width: 600px;
+	font-size: 15px
+}
+/*first post*/
+#promoImage 
+{
+	margin-left: auto;
+	width: 280px;
+}
+#promoImage12
+{
+	margin-left: auto;
+	width: 280px;
+}
+#promoImage123 
+{
+	margin-left: auto;
+	width: 280px;
+}
+/* */
+
+#promo2 p 
+{
+	line-height: 25px;
+	text-align: left;
+	background-color: white;
+	color: black;
+	margin-top: 50px;
+	font-size: 15px;
+	margin-left: 20px;
+}
+#promo21 p 
+{
+	line-height: 25px;
+	text-align: left;
+	background-color: white;
+	color: black;
+	margin-top: 50px;
+	font-size: 15px;
+	margin-left: 20px;
+}
+#promo22 p 
+{
+	line-height: 25px;
+	text-align: left;
+	background-color: white;
+	color: black;
+	margin-top: 50px;
+	font-size: 15px;
+	margin-left: 20px;
+}
+
+#promoText2 
+{
+	width: 600px;
+	font-size: 15px
+
+}
+#promoText21 
+{
+	width: 600px;
+	font-size: 15px
+
+}
+#promoText22 
+{
+	width: 600px;
+	font-size: 15px
+
+}
+#promoImage2 
+{
+	margin-left: auto;
+	width: 280px;
+}
+/**/
+
+#promo3 p 
+{
+	line-height: 25px;
+	text-align: left;
+	background-color: white;
+	color: black;
+	margin-top: 50px;
+	font-size: 15px;
+
+}
+#promoText3
+{
+	width: 600px;
+	font-size: 15px
+}
+
+#promoImage3
+{
+	margin-left: auto;
+	width: 280px;
+}
+#productInfo 
+{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	border-bottom: solid 1px;
+	border-bottom-color: lightgrey;
+	padding-bottom: 40px;
+}
+
+ 
+#productInfo 
+{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	border-bottom: solid 1px;
+	border-bottom-color: lightgrey;
+	padding-bottom: 40px;
+}
+
+/*Get rid of this, here just to give different height to productInfo*/
+#productInfo p 
+{
+	line-height: 30px;
+}
+
+.productDesc 
+{
+	width: 200px;
+	text-align: center;
+	color: black;
+}
+.productDesc h5 i 
+{
+	text-decoration: underline;
+	color: black;
+}
+
+#comments {
+  width: 350px;
+  height: 300px;
+}
+
+#contactText p {
+  font-size: 14px;
+  margin-bottom: 30px;
+  width: 340px;
+}
+
+#contactForm {
+  margin-top: 30px;
+
+}
+
+#submit {
+  display: block;
+  width: 75px;
+  height: 30px;
+  text-align: center;
+  margin-top: 30px;
+  color: #FFF;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: red;
+  font-size: 14px;
+  border: 1px solid #003471;
+}
+#socialMedia
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+.socialMedia {
+  height: 10px;
+  margin-left: auto;
+  margin-top: 28px;
+  margin-right: 10px;
+}
+
+#iconNav img {
+  width: 33px;
+  height: 29px;
+}
+
+#iconNav {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+#iconNav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+
+
+
+#mainFooter 
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#footerNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+
+}
+
+#footerNav li {
+  float: left;
+  border-right:1px;
+}
+
+#footerNav li:last-child {
+  border-right: none;
+}
+
+#footerNav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#footerNav li a:hover:not(.active) {
+  background-color: #FF9829;
+}
+
+
+
+#copyRight 
+{
+	margin-left: auto;
+	width: 310px;
+}
+
+/*Page 2 - Notice we are using one style sheet for all of the pages*/
+
+#contentCon {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	border-bottom: solid 1px;
+	border-bottom-color: lightgrey;
+	padding-bottom: 40px;
+}
+
+#contentCon p 
+{
+	line-height: 30px;
+	background-color: white;
+	color: black;
+}
+
+#content1 
+{
+	width: 440px;
+}
+
+#content2 
+{
+	margin-left: auto;
+	width: 440px;
+	font-size: 14px;
+}
+#content2 p{
+	padding-bottom: : 30px;
+
+}
+
+
+
+/*Page 3*/
+
+#productImages 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+}
+#productImages1 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+}
+/*Get rid of this, here just to give different height*/
+#productImages p
+{
+	line-height: 250px;
+}
+
+.productImg 
+{
+	width: 280px;
+}
+
+
+#contentAreaBig 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	font-size: 14px;
+
+}
+
+
+#contentAreaBig p 
+{
+	line-height: 15px;
+
+	text-align: left;
+	background-color: white;
+	color: black;
+}
+
+#promoImageBig
+{
+	width: 920px;
+}
+
+
+/*Page 4*/
+
+.productDescLargeLeft 
+{
+	width: 410px;
+}
+
+.productDescLargeRight 
+{
+	width: 410px;
+}
+

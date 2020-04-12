@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>London Eye: Blog</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body>
+  
+     <section id="topBar">
+    <h2 class="hidden">Header</h2> 
+   </section><!--end topBar-->
+    <div id="siteContainer">
+        <header id="mainHeader">
+            <div id="logo"><img src="images/london_eye_logo.jpg" alt="London Eye Logo" height="60" width="115">®<h6>A Picture Can Always Tell A Story</h6>
+          </div><!--end logo-->
+           
+           <nav id="mainNav"> <!-- main navigation here-->
+           <ul>
+                <li><a href="index.html">Blog Home Page</a></li>
+                <li><a  href="posts.html">Latest Posts</a></li>
+                <li><a href="gallery.html">Photo Gallery</a></li>
+                <li><a class="active" href="contact.html">Subscribe Today</a></li>
+            </ul> 
+
+            </nav><!--end mainNav-->
+        </header><!--end mainHeader-->
+
+        
+
+
+
+
+        <section id="contentCon">
+        	<div id="content1">
+            <section id="contactArea">
+            <!--start contactArea-->
+                <h2 class="hidden">Contact form</h2>
+                <p id="contactText">For Notifications on Monthly Blog Updates,<br><br> <u>Sign Up Here:</u>
+            <p> 
+            <form id="contactForm" action="form.php" method="post">
+                    <label for="name">Full Name: (required)</label>
+                    <input type="text" required id="name" name="fullName" size="30" placeholder="Enter your first and last name">
+                    <br><br>
+                    <label for="email">Email: (required)</label>
+                    <input type="email" required id="email" size="30" placeholder="Enter your Email">
+                     <br><br>
+                    
+                    <label for="phone">Phone: (optional)</label>
+                    <input type="tel" required id="phone" size="30" placeholder="Enter Phone Number">
+                     <br><br>
+                    <input id="submit" type="submit" value="Submit">
+            </form>
+          </section>
+          </div>
+      
+
+        	<div id="content2">
+                <h5>Please recommend my next stops by <u>commenting</u> below!</h5>
+
+                <label for="comments"></label>
+                    <textarea name="comments" id="comments" required cols="50" rows="8">
+                      
+                    </textarea>
+            </div>
+           </section>
+
+
+        <!--second logo for footer-->
+       <div id="logotwo"><img src="images/london_eye_logo.jpg" alt="London Eye Logo" height="30" width="60"> <small>®</small>
+      </div>
+<div class="socialMedia">
+        <h2 class="hidden">Social Media</h2>
+        <ul id="iconNav">
+            <li id="facebook">
+              <a href="http://www.instagram.com">
+                <img src="images/insta.jpg" alt="facebook">
+              </a>
+            </li>
+            <li id="twitter">
+              <a href="http://www.twitter.com">
+                <img src="images/twitter.jpg" alt="twitter">
+              </a>
+            </li>
+            <li id="youtube">
+              <a href="http://www.youtube.com">
+                <img src="images/youtube.png" alt="youtube">
+              </a>
+           </li>
+        </ul>
+      </div>    
+      
+        <footer id="mainFooter">
+          <div id="footerNav">  <ul>
+                <li><a href="index.html">Blog Home</a></li>
+                <li><a href="posts.html">Latest Posts</a></li>
+                  <li><a href="gallery.html">Photo Gallery</a></li>
+                  <li><a href="contact.html">Subscribe</a></li>
+            </ul> </div><!--end FooterNav-->
+
+            <div id="copyRight"><br><b>© 2020 LondonEye</b></div><!--end Copyright-->
+        </footer><!--end mainFooter-->
+    </div><!--end siteContainer-->
+<script src="js/main.js"></script>    
+</body>
+</html>
